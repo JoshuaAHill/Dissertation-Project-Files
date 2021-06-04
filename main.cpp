@@ -224,13 +224,13 @@ void fft_test(){
             //Print out all stats
         // DMESGF("P---P");
         // DMESGF("%c", uBit.audio.fft->getClosestNote());
-        //DMESGF("%d", (int) uBit.audio.fft->getFrequency());
+        // DMESGF("%d", (int) uBit.audio.fft->getFrequency());
         // DMESGF("S---S");
         // DMESGF("%c", uBit.audio.fft->getSecondaryNote());
         // DMESGF("%d", (int) uBit.audio.fft->getSecondaryFrequency());
 
             //Display closest note on screen
-        uBit.display.print(fft->getClosestNote());
+        uBit.display.print(uBit.audio.fft->getClosestNote());
 
     }
 }
